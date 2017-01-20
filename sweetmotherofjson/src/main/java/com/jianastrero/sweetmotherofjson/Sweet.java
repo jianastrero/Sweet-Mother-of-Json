@@ -35,7 +35,7 @@ public class Sweet {
     private boolean sweeter;
     private Object object;
 
-    private final int TIMEOUT = 10 * 60 * 1000;
+    private final int TIMEOUT = 5 * 1000;
 
     public Sweet() {
         task=new Task();
