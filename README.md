@@ -2,7 +2,7 @@
 The Sweetest way into connecting to your server
 
 [![](https://jitpack.io/v/jianastrero/Sweet-Mother-of-Json.svg)](https://jitpack.io/#jianastrero/Sweet-Mother-of-Json)
-
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Sweet--Mother--of--Json-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5121)
 
 ##Installation
 Add the JitPack repository to your build file then add it in your root build.gradle at the end of repositories:
