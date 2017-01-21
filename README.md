@@ -23,7 +23,12 @@ dependencies {
 ```
 
 
-##Usage
+##Usage - Youtube or Instruction
+###Youtube
+[![Sweet Mother of Json Library tutorial](http://img.youtube.com/vi/ClngqHc_1kM/0.jpg)](http://www.youtube.com/watch?v=ClngqHc_1kM)
+
+
+###Instructions
 Call SweetConfig.setDomain atleast once (recomended to be on the first activity) in your application
 ```
 SweetConfig.setDomain("192.168.43.33/sweet"); //when using a local server. this may be mydomain.com
