@@ -18,7 +18,7 @@ allprojects {
 Add the dependency
 ```
 dependencies {
-    compile 'com.github.jianastrero:Sweet-Mother-of-Json:1.0'
+    compile 'com.github.jianastrero:Sweet-Mother-of-Json:2.0'
 }
 ```
 
