@@ -6,7 +6,7 @@ import com.jianastrero.sweetmotherofjson.exception.MalformedRouteException;
 /**
  * Created by Jian Astrero on 1/10/2017.
  */
-public class SweetConfig {
+public class SweetJsonConfig {
     private static String DOMAIN="http://localhost/";
 
     public static void setDomain(String domain) {
@@ -21,7 +21,7 @@ public class SweetConfig {
                 )
             ) throw new MalformedDomainException();
 
-        SweetConfig.DOMAIN="http://"+domain+"/";
+        SweetJsonConfig.DOMAIN="http://"+domain+"/";
     }
 
     public static String getUrl(String route) {

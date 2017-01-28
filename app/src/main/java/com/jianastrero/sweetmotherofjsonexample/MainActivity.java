@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.jianastrero.sweetmotherofjson.Sweet;
-import com.jianastrero.sweetmotherofjson.SweetConfig;
+import com.jianastrero.sweetmotherofjson.SweetJson;
+import com.jianastrero.sweetmotherofjson.SweetJsonConfig;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -20,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SweetConfig.setDomain("192.168.43.33/sweet");
+        SweetJsonConfig.setDomain("192.168.43.33/sweet");
 
         textView=(TextView)findViewById(R.id.textView);
     }
 
     public void connect(View v) {
-        Connect connect=new Connect("Sweet Mother Of Json");
-        connect.setOnConnectionListener(new Sweet.OnConnectionListener() {
+        Connect connect=new Connect("SweetJson Mother Of Json");
+        connect.setOnConnectionListener(new SweetJson.OnConnectionListener() {
             @Override
             public void onBeforeConnectionStart() {
                 textView.setText("Connecting to server...");

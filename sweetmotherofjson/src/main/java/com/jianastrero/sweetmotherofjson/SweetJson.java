@@ -26,7 +26,7 @@ import javax.net.ssl.HttpsURLConnection;
 /**
  * Created by Jian Astrero on 1/10/2017.
  */
-public class Sweet {
+public class SweetJson {
 
     private Task task;
     private JSONObject postDataParams;
@@ -37,7 +37,7 @@ public class Sweet {
 
     private final int TIMEOUT = 5 * 1000;
 
-    public Sweet() {
+    public SweetJson() {
         task=new Task();
         postDataParams = new JSONObject();
         sweeter=true;
@@ -68,7 +68,7 @@ public class Sweet {
         this.sweeter = sweeter;
     }
 
-    public void setSubclassInstance(Sweet subclassInstance) {
+    public void setSubclassInstance(SweetJson subclassInstance) {
         this.object = subclassInstance;
     }
 
@@ -126,7 +126,7 @@ public class Sweet {
         @Override
         protected String doInBackground(Void... params) {
             try {
-                String path = SweetConfig.getUrl(route);
+                String path = SweetJsonConfig.getUrl(route);
                 URL url = new URL(path);
 
                 Log.e("params", postDataParams.toString());

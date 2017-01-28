@@ -1,11 +1,11 @@
 package com.jianastrero.sweetmotherofjsonexample;
 
-import com.jianastrero.sweetmotherofjson.Sweet;
+import com.jianastrero.sweetmotherofjson.SweetJson;
 
 /**
  * Created by Jian Astrero on 1/21/2017.
  */
-public class Connect extends Sweet {
+public class Connect extends SweetJson {
     public String postValue;
 
     public Connect(String postValue) {
