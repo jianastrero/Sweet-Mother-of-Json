@@ -32,13 +32,13 @@ dependencies {
 
 
 ###Instructions
-Call SweetConfig.setDomain atleast once (recomended to be on the first activity) in your application
+Call SweetJsonConfig.setDomain atleast once (recomended to be on the first activity) in your application
 ```
 SweetJsonConfig.setDomain("192.168.43.33/sweet"); //when using a local server. this may be mydomain.com
 ```
 
 
-Extend Sweet and declare public fields equivalent to post data names. Then call super for the constructor, set the route and set the subclass instance always to this
+Extend SweetJson and declare public fields equivalent to post data names. Then call super for the constructor, set the route and set the subclass instance always to this
 ```
 public class Connect extends SweetJson {
     public String postValue; //this is the value which in php will be taken from $_POST["postValue"]
