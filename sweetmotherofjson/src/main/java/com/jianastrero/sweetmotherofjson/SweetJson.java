@@ -3,6 +3,7 @@ package com.jianastrero.sweetmotherofjson;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import com.jianastrero.sweetmotherofjson.exception.SweetJsonSuperNotCalledException;
 import com.jianastrero.sweetmotherofjson.exception.UnknownSubclassInstanceException;
 
 import org.json.JSONArray;
@@ -34,6 +35,7 @@ public class SweetJson {
     private OnConnectionListener onConnectionListener;
     private boolean sweeter;
     private Object object;
+    private boolean isSuperCalled=false;
 
     private final int TIMEOUT = 5 * 1000;
 
@@ -42,9 +44,12 @@ public class SweetJson {
         postDataParams = new JSONObject();
         sweeter=true;
         object=null;
+        isSuperCalled=true;
     }
 
     public void submit() {
+        if (!isSuperCalled) throw new SweetJsonSuperNotCalledException();
+        if (object==null) throw new UnknownSubclassInstanceException();
         task.execute();
     }
 
@@ -73,6 +78,7 @@ public class SweetJson {
     }
 
     private void addAllData() {
+        if (!isSuperCalled) throw new SweetJsonSuperNotCalledException();
         if (object==null) throw new UnknownSubclassInstanceException();
         if (sweeter) {
             Field[] fields=object.getClass().getFields();
@@ -128,8 +134,6 @@ public class SweetJson {
             try {
                 String path = SweetJsonConfig.getUrl(route);
                 URL url = new URL(path);
-
-                Log.e("params", postDataParams.toString());
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setReadTimeout(TIMEOUT);
