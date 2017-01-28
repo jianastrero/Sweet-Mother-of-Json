@@ -23,7 +23,9 @@ dependencies {
 ```
 
 
-##Usage - Youtube or Instruction
+##Usage - Youtube (v1.0) or Instruction v2.0
+##The only difference of v1.0 to v2.0 is the name of classes
+###SweetConfig -> SweetJsonConfig; Sweet -> SweetJson;
 ###Youtube
 [![Sweet Mother of Json Library tutorial](http://img.youtube.com/vi/ClngqHc_1kM/0.jpg)](http://www.youtube.com/watch?v=ClngqHc_1kM)
 
@@ -31,13 +33,13 @@ dependencies {
 ###Instructions
 Call SweetConfig.setDomain atleast once (recomended to be on the first activity) in your application
 ```
-SweetConfig.setDomain("192.168.43.33/sweet"); //when using a local server. this may be mydomain.com
+SweetJsonConfig.setDomain("192.168.43.33/sweet"); //when using a local server. this may be mydomain.com
 ```
 
 
 Extend Sweet and declare public fields equivalent to post data names. Then call super for the constructor, set the route and set the subclass instance always to this
 ```
-public class Connect extends Sweet {
+public class Connect extends SweetJson {
     public String postValue; //this is the value which in php will be taken from $_POST["postValue"]
 
     public Connect(String postValue) {
