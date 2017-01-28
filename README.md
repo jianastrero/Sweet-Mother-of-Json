@@ -24,8 +24,8 @@ dependencies {
 
 
 ##Usage - Youtube (v1.0) or Instruction v2.0
-##The only difference of v1.0 to v2.0 is the name of classes
-###SweetConfig -> SweetJsonConfig; Sweet -> SweetJson;
+###The only difference of v1.0 to v2.0 is the name of classes
+####SweetConfig -> SweetJsonConfig; Sweet -> SweetJson;
 ###Youtube
 [![Sweet Mother of Json Library tutorial](http://img.youtube.com/vi/ClngqHc_1kM/0.jpg)](http://www.youtube.com/watch?v=ClngqHc_1kM)
 
