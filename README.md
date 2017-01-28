@@ -18,14 +18,15 @@ allprojects {
 Add the dependency
 ```
 dependencies {
-    compile 'com.github.jianastrero:Sweet-Mother-of-Json:2.0'
+    compile 'com.github.jianastrero:Sweet-Mother-of-Json:v2.1'
 }
 ```
 
 
-##Usage - Youtube (v1.0) or Instruction v2.0
-###The only difference of v1.0 to v2.0 is the name of classes
-####SweetConfig -> SweetJsonConfig; Sweet -> SweetJson;
+##Usage - Youtube (v1.0) or Instruction v2.1
+####The 1st difference of v1.0 to v2.1 is the name of classes
+#####SweetConfig -> SweetJsonConfig; Sweet -> SweetJson;
+####The 2nd is, the mid sdk is lowered till api 3
 ###Youtube
 [![Sweet Mother of Json Library tutorial](http://img.youtube.com/vi/ClngqHc_1kM/0.jpg)](http://www.youtube.com/watch?v=ClngqHc_1kM)
 
